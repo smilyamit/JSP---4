@@ -37,8 +37,11 @@ public class Main{
         {
             ArrayList<String> temp = getPaths(src + jump, dest, moves);
             
-            for(int j=0; j<temp.size(); j++)
-                curr.add(jump + temp.get(j));
+            // for(int j=0; j<temp.size(); j++)
+            //     curr.add(jump + temp.get(j));
+            for(String temps: temp){
+                curr.add(jump + temps);
+            }
         }
         
         return curr;
